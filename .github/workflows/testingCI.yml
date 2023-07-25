@@ -1,0 +1,19 @@
+name: Python application test with Git actions
+
+on: [push]
+
+jobs:
+  build:
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup tools for code
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.11.3
+    
+    - name: Install packages
+      run: make install
+      
