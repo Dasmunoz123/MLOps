@@ -1,2 +1,4 @@
 # To activate virtual enviroment
-source ~./venvn/bin/activate
+source ~./venv/bin/activate
+
+python -m venv [VENV_PATH]
